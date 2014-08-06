@@ -11,6 +11,9 @@ gem 'rack-contrib'
 # Use Compass and Sass
 gem 'compass'
 
+# Use Bootstrap
+gem 'bootstrap-sass', '~> 3.2.0'
+
 # Markdown and Textile
 # gem 'rdiscount' # Markdown
 # gem 'RedCloth'  # Textile
