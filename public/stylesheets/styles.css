@@ -1,0 +1,59 @@
+/*
+Syntax error: File to import not found or unreadable: bootstrap-compass.
+              Load paths:
+                Compass::SpriteImporter
+                /CURVE_DESIGN_Files/RubyOnRails - CalTech/flow/flow_prototype/project/public/stylesheets/sass
+                /CURVE_DESIGN_Files/RubyOnRails - CalTech/flow/flow_prototype/project/stylesheets
+                /Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.7/frameworks/blueprint/stylesheets
+                /Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.7/frameworks/compass/stylesheets
+        on line 1 of ./stylesheets/styles.scss
+
+1: @import "bootstrap-compass";
+2: @import "bootstrap-variables";
+3: @import "bootstrap";
+
+Backtrace:
+./stylesheets/styles.scss:1
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/import_node.rb:45:in `import'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `map'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/base.rb:37:in `visit'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:100:in `visit'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/visitors/perform.rb:7:in `visit'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/tree/root_node.rb:20:in `render'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/engine.rb:315:in `_render'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/engine.rb:262:in `render'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:362:in `update_stylesheet'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `each'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/plugin.rb:81:in `update_stylesheets'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/plugin.rb:54:in `check_for_updates'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/sass-3.2.19/lib/sass/plugin/rack.rb:51:in `call'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.5.2/lib/rack/lint.rb:49:in `_call'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.5.2/lib/rack/lint.rb:37:in `call'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.5.2/lib/rack/showexceptions.rb:24:in `call'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.5.2/lib/rack/commonlogger.rb:33:in `call'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.5.2/lib/rack/chunked.rb:43:in `call'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.5.2/lib/rack/content_length.rb:14:in `call'
+/Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/rack-1.5.2/lib/rack/handler/webrick.rb:60:in `service'
+/Users/annamendoza/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+/Users/annamendoza/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+/Users/annamendoza/.rvm/rubies/ruby-1.9.2-p320/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: bootstrap-compass.\A               Load paths:\A                 Compass::SpriteImporter\A                 /CURVE_DESIGN_Files/RubyOnRails - CalTech/flow/flow_prototype/project/public/stylesheets/sass\A                 /CURVE_DESIGN_Files/RubyOnRails - CalTech/flow/flow_prototype/project/stylesheets\A                 /Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.7/frameworks/blueprint/stylesheets\A                 /Users/annamendoza/.rvm/gems/ruby-1.9.2-p320/gems/compass-0.12.7/frameworks/compass/stylesheets\A         on line 1 of ./stylesheets/styles.scss\A \A 1: @import \"bootstrap-compass\";\A 2: @import \"bootstrap-variables\";\A 3: @import \"bootstrap\";"; }
