@@ -34,6 +34,9 @@ section[role=main] {
 }
 
 body > footer {
+  position: absolute;
+  bottom: 0;
+  background-color: $almost-black;
   padding: 0 $body-margin-x 20px;
   font-size: 90%;
   color: $quiet-color;

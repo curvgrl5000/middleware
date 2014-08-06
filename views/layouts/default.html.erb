@@ -11,22 +11,28 @@
   </head>
   <body>
     <header role="banner">
-      <h1><a href="/"><%= image "serve-logo" %></a></h1>
       <div class="action-link"><a href="http://get-serve.com/documentation">Documentation</a></div>
     </header>
+    
     <section role="main">
-      <article>
-        <header><h1><%= @title %></h1></header>
-        <%= yield %>
-      </article>
+      <!-- Begin page content -->
+      <div class="container">
+          <header><h1><%= @title %></h1></header>
+          <%= yield %>
+      </div>
     </section>
+    
     <footer>
       <small>
         <p>Serve is copyright © 2007-2011 John W. Long and Adam I. Williams. Portions have
           been contributed by Robert Evans and others. Serve is distributed under a MIT-style
           license and is open source software. Enjoy!</p>
-        <p>Questions? <a href="http://get-serve.com/mailing-list">Join the  mailing list.</a></p>
+        <p>Questions? <a href="#">Join the  mailing list.</a></p>
       </small>
     </footer>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/javascripts/bootstrap.js"></script>
   </body>
 </html>
