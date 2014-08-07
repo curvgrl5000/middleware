@@ -9,7 +9,7 @@
   }
   &:hover {
     color: $hover;
-    @if $decoration == "underline" { text-decoration: none; }
-    @if $decoration == "plain"     { text-decoration: underline; }
+    @if $decoration == "underline" { text-decoration: underline; }
+    @if $decoration == "plain"     { text-decoration: none; }
   }
 }

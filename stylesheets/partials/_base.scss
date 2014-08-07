@@ -21,13 +21,15 @@ $quiet-color: soften($text-color, 1.5);
 $header-color: strengthen($text-color, 0.66);
 
 // Link Colors
-$link-color: #bb3a08;
+$link-color: #222222; // black
 $link-visited-color: #a72;
-$link-hover-color: #f66933;
+$link-hover-color: #eb6924; // burnt orange
 
 // Theme Colors
 $background-color: white;
 $almost-black: #202328;
+$steel-grey: #666666;
+$orange: #eb6924; // burnt orange  
 $tan: #b89873;                      
 $copper: #bd6828;            
 $rust: #9C5349;                                              

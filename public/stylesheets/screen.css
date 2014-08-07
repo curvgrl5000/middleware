@@ -71,15 +71,15 @@ body {
 }
 
 .links a:link, .content a:link, section[role=main] > article a:link {
-  color: #bb3a08;
+  color: #222222;
   text-decoration: underline;
 }
 .links a:visited, .content a:visited, section[role=main] > article a:visited {
   color: #aa7722;
 }
 .links a:hover, .content a:hover, section[role=main] > article a:hover {
-  color: #f66933;
-  text-decoration: none;
+  color: #eb6924;
+  text-decoration: underline;
 }
 .links a.more, .content a.more, section[role=main] > article a.more {
   white-space: nowrap;
@@ -206,25 +206,61 @@ body {
 }
 
 header[role=banner] {
-  background: white;
-  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(80%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0.15))), -webkit-gradient(radial, 30% 50px, 0, 30% 50px, 400, color-stop(0%, #ffffff), color-stop(100%, #e3e3e3));
-  background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -webkit-radial-gradient(30% 50px, #ffffff, #e3e3e3 400px);
-  background-image: -moz-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -moz-radial-gradient(30% 50px, #ffffff, #e3e3e3 400px);
-  background-image: -o-linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), -o-radial-gradient(30% 50px, #ffffff, #e3e3e3 400px);
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0.15) 100%), radial-gradient(30% 50px, #ffffff, #e3e3e3 400px);
+  background: rgba(0, 0, 0, 0) url("/images/middle.png") 0 0 no-repeat;
+  background-position: 55% -7%;
+  background-size: 93%;
   padding: 20px 15%;
   position: relative;
+  height: 400px;
+}
+header[role=banner] .navbar-default {
+  background-color: rgba(255, 255, 255, 0.85);
+}
+header[role=banner] .navbar-default .navbar-nav > li > a {
+  text-transform: lowercase;
+}
+header[role=banner] .span {
+  text-transform: uppercase;
+}
+header[role=banner] .navbar-default .navbar-nav > .active > a,
+header[role=banner] .navbar-default .navbar-nav > li > a:hover, header[role=banner] .navbar-default .navbar-nav > li > a:focus {
+  color: #eb6924;
+  background-color: rgba(0, 0, 0, 0);
+}
+header[role=banner] .navbar-default .navbar-collapse, header[role=banner] .navbar-default .navbar-form {
+  border-color: #202328;
+  border-width: 2px 0 5px;
+  border-style: solid;
+  padding: 5px;
+  margin-top: 50px;
+}
+header[role=banner] .navbar-header {
+  margin-top: 60px;
+}
+header[role=banner] .navbar-header > span {
+  font-family: 'Times';
+  width: 310px;
+  padding: 15px 15px;
+  font-size: 15px;
+  line-height: 17px;
+  height: 50px;
+  float: left;
+  color: #666666;
+}
+header[role=banner] .navbar-nav {
+  float: right;
+  margin: 0px -15px;
 }
 header[role=banner] a:link {
-  color: white;
+  color: #222222;
   text-decoration: none;
 }
 header[role=banner] a:visited {
-  color: white;
+  color: #222222;
 }
 header[role=banner] a:hover {
-  color: white;
-  text-decoration: underline;
+  color: #eb6924;
+  text-decoration: none;
 }
 header[role=banner] .action-link {
   position: absolute;
@@ -246,8 +282,8 @@ header[role=banner] .action-link a:after {
   content: " ⇢";
 }
 
-section[role=main] {
-  padding: 1px 15%;
+body > section[role=main] .container {
+  padding: 150px 15px 0;
 }
 
 body > footer {
@@ -267,7 +303,7 @@ body > footer a:visited {
 }
 body > footer a:hover {
   color: #333333;
-  text-decoration: none;
+  text-decoration: underline;
 }
 body > footer p {
   margin: 1em 0;
