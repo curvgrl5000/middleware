@@ -207,14 +207,14 @@ body {
 
 header[role=banner] {
   background: rgba(0, 0, 0, 0) url("/images/middle.png") 0 0 no-repeat;
-  background-position: 55% -7%;
-  background-size: 93%;
-  padding: 20px 15%;
+  background-size: 99.895%;
   position: relative;
   height: 400px;
+  overflow: hidden;
 }
 header[role=banner] .navbar-default {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: transparent;
+  border-color: transparent;
 }
 header[role=banner] .navbar-default .navbar-nav > li > a {
   text-transform: lowercase;
@@ -229,15 +229,23 @@ header[role=banner] .navbar-default .navbar-nav > li > a:hover, header[role=bann
 }
 header[role=banner] .navbar-default .navbar-collapse, header[role=banner] .navbar-default .navbar-form {
   border-color: #202328;
-  border-width: 2px 0 5px;
+  border-width: 15px 0 3px;
   border-style: solid;
   padding: 5px;
-  margin-top: 50px;
+  margin-top: 65px;
+  background-color: rgba(255, 255, 255, 0.85);
 }
-header[role=banner] .navbar-header {
-  margin-top: 60px;
+header[role=banner] .navbar-header .navbar-brand {
+  margin-top: 85px;
+  font-family: "museo-slab", serif;
+  font-weight: 700;
 }
-header[role=banner] .navbar-header > span {
+header[role=banner] .navbar-nav {
+  float: right;
+  margin: 0px -15px;
+}
+header[role=banner] .navbar-header .message {
+  margin-top: 85px;
   font-family: 'Times';
   width: 310px;
   padding: 15px 15px;
@@ -246,10 +254,6 @@ header[role=banner] .navbar-header > span {
   height: 50px;
   float: left;
   color: #666666;
-}
-header[role=banner] .navbar-nav {
-  float: right;
-  margin: 0px -15px;
 }
 header[role=banner] a:link {
   color: #222222;

@@ -5,14 +5,14 @@
 
 header[role=banner] {
   background: rgba(0, 0, 0, 0) url('/images/middle.png') 0 0 no-repeat;
-  background-position: 55% -7%;
-  background-size: 93%;
-  padding: 20px $body-margin-x;
+  background-size: 99.895%;
   position: relative;
   height: 400px;
+  overflow: hidden;
   
-  .navbar-default{
-    background-color: rgba(white, 0.85);
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent;
   }
   .navbar-default .navbar-nav > li > a {
     text-transform: lowercase;
@@ -21,39 +21,44 @@ header[role=banner] {
     text-transform: uppercase;
   }
   
-  
   .navbar-default .navbar-nav > .active > a,
   .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
     color: $orange;
     background-color: rgba(0, 0, 0, 0);
-    
   }
   
   .navbar-default .navbar-collapse, .navbar-default .navbar-form {
     border-color: $almost-black;
-    border-width: 2px 0 5px;
+    border-width: 15px 0 3px;
     border-style: solid;
     padding: 5px;
-    margin-top: 50px;   
+    margin-top: 65px;
+    background-color: rgba(white, 0.85);
+       
   }
-  .navbar-header {
-    margin-top: 60px;
-    > span {
-      font-family: 'Times';
-      width: 310px;
-      padding: 15px 15px;
-      font-size: 15px;
-      line-height: 17px;
-      height: 50px;
-      float: left;
-      color: $steel-grey ;
+  .navbar-header .navbar-brand {
+    margin-top: 85px;
+    font-family:"museo-slab", serif;
+    font-weight: 700;
     }
-  }
   
   .navbar-nav {
     float: right;
     margin: 0px -15px;
   }
+  
+  .navbar-header .message {
+    margin-top: 85px;
+    font-family: 'Times';
+    width: 310px;
+    padding: 15px 15px;
+    font-size: 15px;
+    line-height: 17px;
+    height: 50px;
+    float: left;
+    color: $steel-grey ;
+  }
+  
   
   a { @include basic-link($hover: $orange, $decoration: "plain"); }
   
