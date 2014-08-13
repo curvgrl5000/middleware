@@ -12,94 +12,20 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
-    <div class="container">
-      <header role="banner">
-        <!-- Fixed navbar -->
-        <div class="navbar navbar-default" role="navigation">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">FLOW</a>
-            <div class="message">Exploring the Journey of Middleware</div>
-          </div>
-          <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">r & r<span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">about rack</a></li>
-                  <li><a href="#">about rake</a></li>
-                </ul>
-               </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">middleware<span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">some journey</a></li>
-                  <li><a href="#">some journey</a></li>
-                  <li><a href="#">some journey</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">featured journey</li>
-                  <li><a href="#">go to the moon</a></li>
-                </ul>
-              </li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">languages <span class="caret"></span></a>
-                <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">english</a></li>
-                  <li><a href="#">japanese</a></li>
-                  <li><a href="#">german</a></li>
-                  <li class="divider"></li>
-                  <li class="dropdown-header">Help Translate!</li>
-                  <li><a href="#">contact page</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </header>
-    
+    <%= render 'layouts/nav'%> 
     <section role="main">
-      <!-- Begin page content -->
+      <!-- Begin legend here -->
       <div class="container">
-          <div class="row">
-            <div class="col-md-3">col-md-1</div>
-          </div>
-          <h1><a href="http://jsfiddle.net/user/raphaeljs/fiddles/"><%= @title %></a></h1>
-          <%= yield %>
+        <div class="row"> 
+          <div class="col-md-3">col-md-1</div>
+        </div>
+        <h1><a href="http://jsfiddle.net/user/raphaeljs/fiddles/"><%= @title %></a></h1>
+        <!-- Begin page content -->
+        <%= yield %>
       </div>
     </section>
-    <footer>
-      <div class="container-fluid">
-      <div-class="row">
-          <div class="col-md-12">
-            <div class="col-md-3">
-              <p>
-                Serve is copyright © 2007-2011 John W. Long and Adam I. Williams. Portions have
-                been contributed by Robert Evans and others. Serve is distributed under a MIT-style
-                license and is open source software. Enjoy!
-              </p>
-              <p>Questions? <a href="#">Join the  mailing list.</a></p>
-            </div>
-            <div class="col-md-3">
-                <headline>Resources</headline>
-            </div>
-            <div class="col-md-3">
-              <headline>About</headline>
-            </div>
-            <div class="col-md-3">
-              <headline>Contact</headline>
-            </div>
-          </div>  
-        </div>
-      </div>
-    </footer>
+    <%= render 'layouts/footer'%>
+    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

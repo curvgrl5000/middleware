@@ -1,5 +1,22 @@
 @import "compass";
 
+// Theme Colors
+$background-color: white;
+$almost-black: #202328;
+$steel-grey: #666666;
+$orange: #eb6924; // burnt orange  
+$tan: #b89873;                      
+$copper: #bd6828;            
+$rust: #9C5349;                                              
+$off-white: #e1dfdc;
+$aqua:#759791;
+$aqua-matte: #9ab9b4;
+$olive: #98bb3a;
+$plum: #6F6C86;
+$matte-yellow: #CCCF8B;
+$crimson: #AE5682;
+$banner-color: white;
+
 // Reversed?
 $reversed-text: false;
 @import "modules/utility";
@@ -21,26 +38,9 @@ $quiet-color: soften($text-color, 1.5);
 $header-color: strengthen($text-color, 0.66);
 
 // Link Colors
-$link-color: #222222; // black
+$link-color: $almost-black; // black
 $link-visited-color: #a72;
 $link-hover-color: #eb6924; // burnt orange
-
-// Theme Colors
-$background-color: white;
-$almost-black: #202328;
-$steel-grey: #666666;
-$orange: #eb6924; // burnt orange  
-$tan: #b89873;                      
-$copper: #bd6828;            
-$rust: #9C5349;                                              
-$off-white: #e1dfdc;
-$aqua:#759791;
-$aqua-matte: #9ab9b4;
-$olive: #98bb3a;
-$plum: #6F6C86;
-$matte-yellow: #CCCF8B;
-$crimson: #AE5682;
-$banner-color: white;
 
 // Paragraphs
 $indented-paragraphs: false;
@@ -48,8 +48,13 @@ $indented-paragraphs: false;
 // Layout
 $body-margin-x: 15%;
 
+
 // Border Radius
 $default-border-radius: 8px;
+
+// Margins
+.md-margin-bottom-40 { margin-bottom: 40px; }
+
 
 @import "modules/all";
 

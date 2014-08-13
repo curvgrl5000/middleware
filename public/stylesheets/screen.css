@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.md-margin-bottom-40 {
+  margin-bottom: 40px;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -71,7 +75,7 @@ body {
 }
 
 .links a:link, .content a:link, section[role=main] > article a:link {
-  color: #222222;
+  color: #202328;
   text-decoration: underline;
 }
 .links a:visited, .content a:visited, section[role=main] > article a:visited {
@@ -209,8 +213,8 @@ header[role=banner] {
   background: rgba(0, 0, 0, 0) url("/images/middle.png") 1px 0 no-repeat;
   background-size: 99.8%;
   position: relative;
-  height: 227px;
-  overflow: hidden;
+  height: 237px;
+  overflow: initial;
 }
 header[role=banner] .navbar-default {
   background-color: transparent;
@@ -257,11 +261,11 @@ header[role=banner] .navbar-header .message {
   color: #666666;
 }
 header[role=banner] a:link {
-  color: #222222;
+  color: #202328;
   text-decoration: none;
 }
 header[role=banner] a:visited {
-  color: #222222;
+  color: #202328;
 }
 header[role=banner] a:hover {
   color: #eb6924;
@@ -307,23 +311,29 @@ body > footer {
   position: absolute;
   bottom: 0;
   background-color: #202328;
-  padding: 0 15% 20px;
-  font-size: 90%;
+  padding: 20px 0px 20px;
+  font-size: 85%;
   color: gray;
+  width: 100%;
 }
 body > footer a:link {
-  color: #333333;
-  text-decoration: underline;
+  color: #666666;
+  text-decoration: none;
 }
 body > footer a:visited {
-  color: #333333;
+  color: #666666;
 }
 body > footer a:hover {
-  color: #333333;
-  text-decoration: underline;
+  color: #eb6924;
+  text-decoration: none;
 }
 body > footer p {
   margin: 1em 0;
+}
+body > footer .headline {
+  font-family: "museo-slab", serif;
+  color: white;
+  margin-bottom: 12px;
 }
 
 @media screen and (max-width: 462px) {
