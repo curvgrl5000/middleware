@@ -206,10 +206,10 @@ body {
 }
 
 header[role=banner] {
-  background: rgba(0, 0, 0, 0) url("/images/middle.png") 0 0 no-repeat;
-  background-size: 99.895%;
+  background: rgba(0, 0, 0, 0) url("/images/middle.png") 1px 0 no-repeat;
+  background-size: 99.8%;
   position: relative;
-  height: 400px;
+  height: 227px;
   overflow: hidden;
 }
 header[role=banner] .navbar-default {
@@ -219,9 +219,6 @@ header[role=banner] .navbar-default {
 header[role=banner] .navbar-default .navbar-nav > li > a {
   text-transform: lowercase;
 }
-header[role=banner] .span {
-  text-transform: uppercase;
-}
 header[role=banner] .navbar-default .navbar-nav > .active > a,
 header[role=banner] .navbar-default .navbar-nav > li > a:hover, header[role=banner] .navbar-default .navbar-nav > li > a:focus {
   color: #eb6924;
@@ -229,29 +226,33 @@ header[role=banner] .navbar-default .navbar-nav > li > a:hover, header[role=bann
 }
 header[role=banner] .navbar-default .navbar-collapse, header[role=banner] .navbar-default .navbar-form {
   border-color: #202328;
+  font-family: "museo-slab", serif;
+  font-size: 14px;
+  font-weight: 700;
   border-width: 15px 0 3px;
   border-style: solid;
   padding: 5px;
   margin-top: 65px;
   background-color: rgba(255, 255, 255, 0.85);
+  overflow-x: hidden;
 }
 header[role=banner] .navbar-header .navbar-brand {
-  margin-top: 85px;
+  margin-top: 87px;
   font-family: "museo-slab", serif;
   font-weight: 700;
+  font-size: 35px;
 }
 header[role=banner] .navbar-nav {
-  float: right;
   margin: 0px -15px;
 }
 header[role=banner] .navbar-header .message {
-  margin-top: 85px;
-  font-family: 'Times';
-  width: 310px;
-  padding: 15px 15px;
+  margin-top: 87px;
+  font-family: "kepler-std-display",serif;
   font-size: 15px;
-  line-height: 17px;
-  height: 50px;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  width: 310px;
+  padding: 15px 5px;
   float: left;
   color: #666666;
 }
@@ -285,9 +286,21 @@ header[role=banner] .action-link a {
 header[role=banner] .action-link a:after {
   content: " ⇢";
 }
+header[role=banner] .navbar-toggle {
+  background-color: white;
+  margin-top: 14px;
+  margin-right: 12px;
+}
+header[role=banner] .navbar-default .navbar-toggle:hover .icon-bar {
+  background-color: white;
+}
+header[role=banner] .navbar-default .navbar-toggle:hover, header[role=banner] .navbar-default .navbar-toggle:focus {
+  background-color: #eb6924;
+}
 
 body > section[role=main] .container {
-  padding: 150px 15px 0;
+  padding: 15px 15px 0;
+  background-color: rgba(255, 255, 255, 0.85);
 }
 
 body > footer {
@@ -311,4 +324,33 @@ body > footer a:hover {
 }
 body > footer p {
   margin: 1em 0;
+}
+
+@media screen and (max-width: 462px) {
+  header[role=banner] {
+    height: auto;
+  }
+  header[role=banner] .navbar-header .message {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin-top: 32px !important;
+    max-width: 230px !important;
+  }
+  header[role=banner] .navbar-header .navbar-brand {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+}
+@media screen and (max-width: 767px) {
+  header[role=banner] {
+    height: auto;
+  }
+  header[role=banner] .navbar-header .message {
+    background-color: rgba(255, 255, 255, 0.85);
+    max-width: 235px;
+  }
+  header[role=banner] .navbar-header .navbar-brand {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  header[role=banner] .navbar-default .navbar-collapse {
+    margin-top: 10px !important;
+  }
 }
