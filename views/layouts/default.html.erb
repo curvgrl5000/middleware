@@ -13,22 +13,36 @@
   </head>
   <body>
     <%= render 'layouts/nav'%> 
+    
     <section role="main">
       <!-- Begin legend here -->
       <div class="container">
         <div class="row"> 
-          <div class="col-md-3">col-md-1</div>
+          <div class="col-md-12">
+            <h1><%= @title %></h1>
+          </div>  
         </div>
-        <h1><a href="http://jsfiddle.net/user/raphaeljs/fiddles/"><%= @title %></a></h1>
         <!-- Begin page content -->
         <%= yield %>
       </div>
     </section>
+    
     <%= render 'layouts/footer'%>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/javascripts/bootstrap.js"></script>
+    <script type="text/javascript" src="/javascripts/raphael.js"></script>
+    
+    <!-- The following (3) libraries were used in the initial work - only use them for reference -->
+/*  <script type="text/javascript" src="/javascripts/raphael-guides.js"></script>
+    <script type="text/javascript" src="/javascripts/init.js"></script>
+    <script type="text/javascript" src="/javascripts/main.js"></script>
+*/  <!-- END REFERENCE -->
+    
+    
+    <!-- Make a branch front github and use this canvas for your raphael work -->
+    <script type="text/javascript" src="/javascripts/main_squeeze.js"></script>
   </body>
 </html>

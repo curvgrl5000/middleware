@@ -307,6 +307,18 @@ body > section[role=main] .container {
   background-color: rgba(255, 255, 255, 0.85);
 }
 
+main[role=main] a:link {
+  color: #666666;
+  text-decoration: none;
+}
+main[role=main] a:visited {
+  color: #666666;
+}
+main[role=main] a:hover {
+  color: #eb6924;
+  text-decoration: none;
+}
+
 body > footer {
   position: absolute;
   bottom: 0;
