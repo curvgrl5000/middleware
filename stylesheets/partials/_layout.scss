@@ -92,6 +92,13 @@ body > section[role=main] .container {
   background-color: rgba(white, 0.85);
 }
 
+
+main[role=main] {
+  a { @include basic-link($color:$steel-grey, $hover: $orange, $decoration: "plain");
+  } 
+}
+
+
 body > footer {
   position: inherit;
   bottom: 0;
