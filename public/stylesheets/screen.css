@@ -308,10 +308,10 @@ body > section[role=main] .container {
 }
 
 body > footer {
-  position: absolute;
+  position: inherit;
   bottom: 0;
   background-color: #202328;
-  padding: 20px 0px 20px;
+  padding: 20px 0px 55px;
   font-size: 85%;
   color: gray;
   width: 100%;

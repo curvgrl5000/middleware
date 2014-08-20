@@ -16,9 +16,6 @@
     <section role="main">
       <!-- Begin legend here -->
       <div class="container">
-        <div class="row"> 
-          <div class="col-md-3">col-md-1</div>
-        </div>
         <h1><a href="http://jsfiddle.net/user/raphaeljs/fiddles/"><%= @title %></a></h1>
         <!-- Begin page content -->
         <%= yield %>
@@ -30,5 +27,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/javascripts/bootstrap.js"></script>
+    <script src="/javascripts/raphael.js"></script>
+    <script>
+      var paper = Raphael("contained", 1140, 600);
+      })
+    </script>
+        
   </body>
 </html>
