@@ -3,64 +3,55 @@
   margin-bottom: 40px;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
+h1 h1, h1 h2, h1 h3, h1 h4, h1 h5, h1 h6, h2 h1, h2 h2, h2 h3, h2 h4, h2 h5, h2 h6, h3 h1, h3 h2, h3 h3, h3 h4, h3 h5, h3 h6, h4 h1, h4 h2, h4 h3, h4 h4, h4 h5, h4 h6, h5 h1, h5 h2, h5 h3, h5 h4, h5 h5, h5 h6, h6 h1, h6 h2, h6 h3, h6 h4, h6 h5, h6 h6 {
+  color: #111111;
+  margin: 1em 0;
+}
+h1 h1, h2 h1, h3 h1, h4 h1, h5 h1, h6 h1 {
+  font-weight: bold;
+  font-size: 200%;
+  line-height: 1.099;
+  margin: 0.75em 0;
+}
+h1 h2, h2 h2, h3 h2, h4 h2, h5 h2, h6 h2 {
+  font-weight: bold;
+  font-size: 170%;
+  line-height: 1.099;
+}
+h1 h3, h2 h3, h3 h3, h4 h3, h5 h3, h6 h3 {
+  font-weight: bold;
+  font-size: 140%;
+  line-height: 1.169;
+  margin: 1.25em 0 0.5em;
+}
+h1 h4, h2 h4, h3 h4, h4 h4, h5 h4, h6 h4 {
+  font-weight: bold;
+  font-size: 110%;
+  line-height: 1.26;
+  margin: 0.5em 0 0.5em;
+}
+h1 h5, h2 h5, h3 h5, h4 h5, h5 h5, h6 h5 {
+  font-style: italic;
+  font-size: 110%;
+  line-height: 1.4;
+  margin: 0.65em 0;
+}
+h1 h6, h2 h6, h3 h6, h4 h6, h5 h6, h6 h6 {
+  font-weight: bold;
+  margin-bottom: -0.75em;
 }
 
-html {
-  line-height: 1;
+h3.title, h4.subtitle {
+  font-family: "museo-slab", serif;
+  color: gray;
+  height: 44px;
+  display: inline-block;
+  padding-right: 10px;
 }
 
-ol, ul {
-  list-style: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-
-q, blockquote {
-  quotes: none;
-}
-q:before, q:after, blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-a img {
-  border: none;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
-  display: block;
+h4.subtitle {
+  font-family: "kepler-std-display",serif;
+  letter-spacing: 0.06em;
 }
 
 html, body {
@@ -252,9 +243,9 @@ header[role=banner] .navbar-nav {
 header[role=banner] .navbar-header .message {
   margin-top: 87px;
   font-family: "kepler-std-display",serif;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 500;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
   width: 310px;
   padding: 15px 5px;
   float: left;

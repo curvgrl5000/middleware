@@ -55,11 +55,34 @@ $default-border-radius: 8px;
 // Margins
 .md-margin-bottom-40 { margin-bottom: 40px; }
 
-
 @import "modules/all";
 
-@include global-reset;
-@include reset-html5;
+$baseline: 22px;
+// Basic styles
+h1, h2, h3, h4, h5, h6 {
+  @include headings;
+}
+
+h3.title, h4.subtitle {
+   font-family: "museo-slab", serif;
+   color: $quiet-color;
+   height: $baseline *2;
+   display: inline-block;
+   padding-right: 10px;
+}
+
+h4.subtitle {
+  font-family: "kepler-std-display",serif;
+  letter-spacing: 0.06em;
+}
+
+
+
+
+
+
+//@include global-reset;
+//@include reset-html5; 
 
 html, body { background: $background-color; }
 body { @include base-font; }
