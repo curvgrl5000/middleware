@@ -1,4 +1,12 @@
 @charset "UTF-8";
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
 .md-margin-bottom-40 {
   margin-bottom: 40px;
 }
