@@ -17,7 +17,8 @@ var arrowright = paper.path(  "M16,1.466C7.973,1.466,1.466,7.973,1.466,16c0,8.02
 // END Arrow Right
 
 
-// Icon: Arrow Right Alt, expressed as a 'path;  
+// Icon: Arrow Right Alt, expressed as a 'path and was created from the RSR Rapid Conversion Tool
+// Seems a bit luggy and not as flexible but if the more complex shapes can be scaled, it could be a good fit.  
 var paper = Raphael('arrow-right-wide', 120, 120); 
 var group_a = paper.set(); 
 group_a.attr({
@@ -77,80 +78,41 @@ var paper = Raphael('arrowleft', 120, 120); //this version is tidier and here we
 var arrowleft = paper.path(  "M16,30.534c8.027,0,14.534-6.507,14.534-14.534c0-8.027-6.507-14.534-14.534-14.534C7.973,1.466,1.466,7.973,1.466,16C1.466,24.027,7.973,30.534,16,30.534zM18.335,6.276l3.536,3.538l-6.187,6.187l6.187,6.187l-3.536,3.537l-9.723-9.724L18.335,6.276z")
 .attr({
   fill: "#000",
-  transform: "T30, 32 S3, 3",
+  transform: "T30, 32 S3, 3"
 });
 // END Arrow Left
 
+   
+// Icon: Arrow Left, expressed as a 'path;  
+var paper = Raphael('arrow-left-wide', 120, 120); 
+var arrow = paper.set();
+arrow.push(paper.circle(48, 48, 44).attr({ fill: "#000" }));
 
-
-
-
+var shape = paper.set();
+shape.push(paper.path("M23,50 L45,28 L49,33 L34,47 L69,47 L69,52 L34,52 L49,65 L46,70 L23,50z"))
+.attr({
+   fill: "#fff", 
+   stroke: "#fff", 
+   "stroke-width": "3", 
+   transform: "T3,0 s.95"
+});
+// END Arrow Left
+ 
 
 // Icon: Arrow Right Alt, expressed as a 'path;  
-var paper = Raphael('arrow-left-wide', 120, 120); 
-var group_a = paper.set(); 
-group_a.attr({
-  'clip-path': 'url(#clp1)',
-  'fill': 'none',
-  'name': 'group_a'
+var paper = Raphael('arrow-right-wide2', 120, 120); 
+var arrow = paper.set();
+arrow.push(paper.circle(48, 48, 44).attr({ fill: "#000" }));
+
+var shape = paper.set();
+shape.push(paper.path("M23,50 L45,28 L49,33 L34,47 L69,47 L69,52 L34,52 L49,65 L46,70 L23,50z"))
+.attr({
+  fill: "#fff", 
+  stroke: "#fff", 
+  "stroke-width": "3", 
+  transform: "T3,0 s-.95"
   }); 
-
-var group_b = paper.set(); 
-group_b.attr({
-  'clip-path': 'url(#clp1)',
-  'fill': 'none',
-  'parent': 'group_a',
-  'name': 'group_b'
-  });
-group_b.transform("m1 0 0 1 573.4 125.8232 S1.51 T15, 18");
-
-var group_c = paper.set(); 
-group_c.attr({
-  'clip-path': 'url(#clp1)',
-  'fill': 'none',
-  'parent': 'group_a',
-  'name': 'group_c'
-  });
-group_c.transform("m1 0 0 1 -610.8813 -530.927 S1.51 T15, 18"); 
-
-var path_d = paper.path("M-543.125-66.823c15.947,0,28.875-12.928,28.875-28.875s-12.928-28.875-28.875-28.875 S-572-111.645-572-95.698S-559.072-66.823-543.125-66.823z")
-.attr({
-  fill: '#000000',
-  "clip-path": 'url(#clp1)',
-  parent: 'group_a',
-  'stroke-width': '0',
-  'stroke-opacity': '1'
-  }).transform("m1 0 0 1 573.4 125.8232 S1.51 T15, 18").data('id', 'path_d'); 
-
-var path_e = paper.path("M642.85,545.335l-4.014,4.011l8.845,8.844h-21.432v5.673h21.314l-8.845,8.844l4.012,4.012l15.751-15.75 L642.85,545.335z")
-.attr({
-  fill: '#FFFFFF',
-  "clip-path": 'url(#clp1)',
-  parent: 'group_a',
-  'stroke-width': '0',
-  'stroke-opacity': '1'
-  }).transform("m1 0 0 1 -610.8813 -530.927 S1.51 T15, 18").data('id', 'path_e'); 
-
-var iconGroups = [group_a,group_b,group_c]; group_a.push( ); group_b.push( path_d ); group_c.push( path_e );
-// END Icon: Arrow Right Alt
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// END Arrow Right Wide Alternative
 
 
 //SMALLER ICONS
