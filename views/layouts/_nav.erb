@@ -33,10 +33,13 @@
               <li><%= link_to "GET that thing", "", :target => "_blank" %></li>
             </ul>
           </li>
-          
-          <li><%= link_to "about", "", :target => "_blank" %></li>
-          <li><%= link_to "contact", "", :target => "_blank" %></li>
-          
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">contact <span class="caret"></span></a> 
+            <ul class="dropdown-menu" role="menu">
+              <li><%= link_to "contact", "", :target => "_blank" %></li>
+              <li><%= link_to "help out!", "", :target => "_blank" %></li>
+            </ul>
+          </li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">languages <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">

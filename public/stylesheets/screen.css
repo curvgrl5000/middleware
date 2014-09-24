@@ -349,7 +349,7 @@ body > footer p {
 body > footer .headline {
   font-family: "museo-slab", serif;
   color: white;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
 }
 
 @media screen and (max-width: 462px) {
