@@ -549,4 +549,14 @@ group_b.push(
 	path_c 
 );
 arrowdown.setViewBox(0, 0, 77, 77);  
-// END Arrow icon      
+// END Arrow icon 
+
+//Lines
+var paper = Raphael('greenline', 100, 25);
+var l = paper.path("M 0,20 L 150,20z").attr({stroke:"#b2bd00", "stroke-width": 10}); //lime green line
+
+var paper = Raphael('blackline', 100, 25);
+var l = paper.path("M 0,20 L 150,20z").attr({stroke:"#000", "stroke-width": 15}); //black green line
+
+var paper = Raphael('blueline', 100, 25);
+var l = paper.path("M 0,20 L 150,20z").attr({stroke:"#00aeef", "stroke-width": 10}); //black green line

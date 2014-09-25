@@ -7,49 +7,67 @@
   float: right;
 }
 
+.lines {
+  height: 20px;
+}
+
 .md-margin-bottom-40 {
   margin-bottom: 40px;
 }
 
-h1 h1, h1 h2, h1 h3, h1 h4, h1 h5, h1 h6, h2 h1, h2 h2, h2 h3, h2 h4, h2 h5, h2 h6, h3 h1, h3 h2, h3 h3, h3 h4, h3 h5, h3 h6, h4 h1, h4 h2, h4 h3, h4 h4, h4 h5, h4 h6, h5 h1, h5 h2, h5 h3, h5 h4, h5 h5, h5 h6, h6 h1, h6 h2, h6 h3, h6 h4, h6 h5, h6 h6 {
+h1 h1, h1 h2, h1 h3, h1 h4, h1 h5, h1 h6, h2 h1, h2 h2, h2 h3, h2 h4, h2 h5, h2 h6, h3 h1, h3 h2, h3 h3, h3 h4, h3 h5, h3 h6, h4 h1, h4 h2, h4 h3, h4 h4, h4 h5, h4 h6, h5 h1, h5 h2, h5 h3, h5 h4, h5 h5, h5 h6, h6 h1, h6 h2, h6 h3, h6 h4, h6 h5, h6 h6, p h1, p h2, p h3, p h4, p h5, p h6 {
   color: #111111;
   margin: 1em 0;
 }
-h1 h1, h2 h1, h3 h1, h4 h1, h5 h1, h6 h1 {
+h1 h1, h2 h1, h3 h1, h4 h1, h5 h1, h6 h1, p h1 {
   font-weight: bold;
   font-size: 200%;
   line-height: 1.099;
   margin: 0.75em 0;
 }
-h1 h2, h2 h2, h3 h2, h4 h2, h5 h2, h6 h2 {
+h1 h2, h2 h2, h3 h2, h4 h2, h5 h2, h6 h2, p h2 {
   font-weight: bold;
   font-size: 170%;
   line-height: 1.099;
 }
-h1 h3, h2 h3, h3 h3, h4 h3, h5 h3, h6 h3 {
+h1 h3, h2 h3, h3 h3, h4 h3, h5 h3, h6 h3, p h3 {
   font-weight: bold;
   font-size: 140%;
   line-height: 1.169;
   margin: 1.25em 0 0.5em;
 }
-h1 h4, h2 h4, h3 h4, h4 h4, h5 h4, h6 h4 {
+h1 h4, h2 h4, h3 h4, h4 h4, h5 h4, h6 h4, p h4 {
   font-weight: bold;
   font-size: 110%;
   line-height: 1.26;
   margin: 0.5em 0 0.5em;
 }
-h1 h5, h2 h5, h3 h5, h4 h5, h5 h5, h6 h5 {
+h1 h5, h2 h5, h3 h5, h4 h5, h5 h5, h6 h5, p h5 {
   font-style: italic;
   font-size: 110%;
   line-height: 1.4;
   margin: 0.65em 0;
 }
-h1 h6, h2 h6, h3 h6, h4 h6, h5 h6, h6 h6 {
+h1 h6, h2 h6, h3 h6, h4 h6, h5 h6, h6 h6, p h6 {
   font-weight: bold;
   margin-bottom: -0.75em;
 }
 
-h3.title, h4.subtitle {
+p.tall {
+  color: gray;
+  display: inline-block;
+  font-family: "kepler-std-display",serif;
+  font-size: 1.7em;
+  line-height: 2.65em;
+  padding: 30px 14px 0px 0px;
+}
+
+h2.legend {
+  font-family: "museo-slab", serif;
+  margin: 5px 0px;
+}
+
+h3.title, h4.subtitle, h4.icon-titles {
   font-family: "museo-slab", serif;
   color: gray;
   height: 44px;
@@ -57,9 +75,51 @@ h3.title, h4.subtitle {
   padding-right: 10px;
 }
 
-h4.subtitle {
+h4.subtitle, h4.icon-titles, h4.path-titles {
   font-family: "kepler-std-display",serif;
   letter-spacing: 0.06em;
+  height: 44px;
+}
+
+h4.icon-titles {
+  height: 22px;
+  padding-left: 20px;
+}
+
+h4.path-titles {
+  height: 22px;
+  padding-left: 0px;
+  font-size: 17px;
+}
+
+ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, li ul, li ol, li dl {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+ul ul, ul ol, ul dd, ol ul, ol ol, ol dd, li ul, li ol, li dd {
+  padding-left: 2.25em;
+}
+ul ul, ol ul, li ul {
+  list-style: disc;
+}
+ul ol, ol ol, li ol {
+  list-style: decimal;
+}
+ul li, ol li, li li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  display: flex;
+}
+ul dt, ol dt, li dt {
+  margin-top: 1em;
+}
+ul dd, ol dd, li dd {
+  margin-bottom: 1em;
+}
+
+.mission, .mission h3 {
+  padding-right: 30px;
+  line-height: 1.75em;
 }
 
 svg {
@@ -174,6 +234,7 @@ body {
 .typography li, .content li, section[role=main] > article li {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  display: flex;
 }
 .typography dt, .content dt, section[role=main] > article dt {
   margin-top: 1em;
@@ -309,6 +370,7 @@ header[role=banner] .navbar-default .navbar-toggle:hover, header[role=banner] .n
 body > section[role=main] .container {
   padding: 15px 15px 0;
   background-color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 40px;
 }
 
 main[role=main] a:link {

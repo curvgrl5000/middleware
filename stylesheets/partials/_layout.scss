@@ -90,12 +90,14 @@ header[role=banner] {
 body > section[role=main] .container {
   padding: 15px 15px 0;
   background-color: rgba(white, 0.85);
+  margin-bottom: 40px;
+  
 }
 
 
 main[role=main] {
   a { @include basic-link($color:$steel-grey, $hover: $orange, $decoration: "plain");
-  } 
+  }
 }
 
 

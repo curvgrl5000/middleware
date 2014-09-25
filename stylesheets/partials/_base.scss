@@ -50,6 +50,11 @@ $body-margin-x: 15%;
 .fl { float: left; }
 .fr { float: right; }
 
+// Lines in Legend
+.lines {
+  height: 20px;
+}
+
 // Border Radius
 $default-border-radius: 8px;
 
@@ -60,11 +65,26 @@ $default-border-radius: 8px;
 
 $baseline: 22px;
 // Basic styles
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   @include headings;
 }
 
-h3.title, h4.subtitle {
+p.tall {
+  color: $quiet-color;
+  display: inline-block;
+  font-family: "kepler-std-display",serif;  
+  font-size: 1.7em;
+  line-height: 2.65em;
+  padding: 30px 14px 0px 0px;
+}
+
+h2.legend {
+  font-family: "museo-slab", serif;
+  margin: 5px 0px;
+}
+
+  
+h3.title, h4.subtitle, h4.icon-titles {
    font-family: "museo-slab", serif;
    color: $quiet-color;
    height: $baseline *2;
@@ -72,9 +92,27 @@ h3.title, h4.subtitle {
    padding-right: 10px;
 }
 
-h4.subtitle {
+h4.subtitle, h4.icon-titles, h4.path-titles {
   font-family: "kepler-std-display",serif;
   letter-spacing: 0.06em;
+  height: $baseline *2;
+}
+
+h4.icon-titles {
+  height: $baseline;
+  padding-left: 20px;
+}
+h4.path-titles {
+  height: $baseline;
+  padding-left: 0px;
+  font-size: 17px;
+}
+ul, ol, li {
+  @include lists;
+}
+.mission, .mission h3 {
+  padding-right: 30px;
+  line-height: 1.75em;
 }
 
 svg { height: 100%; width: 100%; }
