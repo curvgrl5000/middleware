@@ -2,7 +2,7 @@ What is this?
 =============
 
 This is a simple HTML prototype written in HAML or ERB that is designed to be
-viewed with Serve.
+viewed with Serve!
 
 What is Serve? Serve is an open-source rapid prototyping framework for Web
 applications. It makes it easy to prototype functionality without writing a
