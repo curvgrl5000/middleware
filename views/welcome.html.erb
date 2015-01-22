@@ -1,21 +1,21 @@
 <!-- Name the Middleware title here - It will get added to each page -->
 <% @title = "Rack MiddleWare: GET" %> 
 
-<div class="row"> 
+<div class="row">
+  
+  <div class="col-md-8"> 
+    <div id="canvas" class="canvas"></div>
+  </div>
+  
   <div class="col-md-3">
-    <div id='client-side'></div>
-  </div>
-  <div class="col-md-2">
-    <div id='middleware-1'></div>
-  </div>
-  <div class="col-md-2">
-    <div id='middleware-2'></div>
-  </div>
-  <div class="col-md-2">
-    <div id='middleware-3'></div>
-  </div>
-  <div class="col-md-3">
-    <div id='rackrails'></div>
+    <div id="middleware">
+      <script type="text/x-handlebars">
+        {{outlet}}
+      </script>
+
+        <script type="text/x-handlebars" id="index">
+        </script>
+    </div>
   </div>
 </div>
 

@@ -13,8 +13,9 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   </head>
   <body>
-    <%= render 'layouts/nav'%> 
     
+    <%= render 'layouts/nav'%> 
+   
     <section role="main">
       <!-- Begin legend here -->
       <div class="container">
@@ -31,7 +32,12 @@
     <%= render 'layouts/footer'%>
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/javascripts/libs/jquery-1.10.2.js"></script>
+     <!-- Here's all the Ember JS stuff -->
+    <script src="/javascripts/libs/handlebars-v2.0.0.js"></script>
+    <script src="/javascripts/libs/ember-1.9.1.js"></script>
+    <script src="/javascripts/app.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/javascripts/bootstrap.js"></script>
     <script src="/javascripts/raphael.js"></script>
@@ -39,13 +45,16 @@
     
     <!-- The following (3) libraries were used in the initial work - only use them for reference -->
     <script type="text/javascript" src="/javascripts/raphael-guides.js"></script>
-    <script type="text/javascript" src="/javascripts/init.js"></script>
+    <!-- <script type="text/javascript" src="/javascripts/init.js"></script> -->
     <!-- END REFERENCE -->
     
     
     <!-- Make a branch front github and use this canvas for your raphael work -->
-    <script type="text/javascript" src="/javascripts/main_squeeze.js"></script>
-    <script type="text/javascript" src="/javascripts/icons_for_middleware.js"></script>
-    
+     <% if @title == "SYMBOLS" %>
+      <script type="text/javascript" src="/javascripts/icons_for_middleware.js"></script>
+     <% end %> 
+     <% if @title == "Rack MiddleWare: GET" %> 
+      <script type="text/javascript" src="/javascripts/icons_for_home.js"></script>
+     <% end %> 
   </body>
 </html>

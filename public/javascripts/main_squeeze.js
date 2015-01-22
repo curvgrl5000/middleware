@@ -1,5 +1,12 @@
 //The First Middleware Animation:
-  var paper = new Raphael(document.getElementById('client-side'), 262.5, 610);
+  
+  
+  
+  
+  
+  
+  
+  var paper = new Raphael(document.getElementById('big-circle'), 262.5, 610);
   var pearl = paper.circle(125, 100, 70); // starting point circle
 	pearl.attr("fill", "black");
 	
